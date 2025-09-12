@@ -1,20 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 
     <!-- CSS EXTERNAL -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    
+    <!-- logo website -->
+    <header class="main-header">
+
+        <div class="logo-icon"></div>
+
+        <!-- navbar website -->
+        <nav class="nav-list">
+            <ul>
+                <li><a class="my-link" href="#Home">Home</a></li>
+                <li><a class="my-link" href="#Our Profile">Our Profile</a></li>
+                <li><a class="my-link" href="#Portfolio">Portfolio</a></li>
+                <li><a class="my-link" href="#Message Us">Contact Us</a></li>
+                <li><a class="product-link" href="#Our Package">Our Package</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <hr>
+    <main>
+        <section id="Home" class="home-section">
+            <h1>안녕하세요!<span id="welcome-user">user</span>,</h1>
+            <p class="p1">Join us at SEOUL CLASS and embark on an exciting journey of language learning and cultural
+                exploration!</p>
+            <p class="p1">Ready to take your Korean skills to the next level? <a class="link-home"
+                    href="#Our Package">Click Here</a></p>
+        </section>
+
+        <section id="Our Profile" class="profile-section">
+            <h2>Our Profile</h2>
+            <p class="p-profile">Seoul Class is an international online language platform founded in 2022 with the
+                mission to make learning Korean fun, effective, and accessible for everyone.</p>
+
+            <div class="feature-container">
+                <div class="feature-box">
+                    <h3>🌍 Global Reach</h3>
+                    <p class="p-box">●Students from 15+ countries have joined our classes.</p>
+                    <p class="p-box">●Over 2,000 learners have completed beginner to advanced Korean levels.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>👨‍🏫 Expert Instructors</h3>
+                    <p class="p-box">●Native Korean teachers with professional teaching certificates.</p>
+                    <p class="p-box">●Bilingual instructors (Korean-English/Indonesian) for easy learning.</p>
+                </div>
+
+                <div class="feature-box">
+                    <h3>📚 Innovative Learning</h3>
+                    <p class="p-box">●Interactive courses with real-life conversation practice.</p>
+                    <p class="p-box">●Flexible schedules and personalized study plans.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Portfolio" class="portfolio-section">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <h3>Beginner Korean Course (2022)</h3>
+                    <p>Interactive 3-month program for 200+ students focusing on Hangul, basic grammar, and daily
+                        conversation.</p>
+                </div>
+
+                <div class="portfolio-box">
+                    <h3>Seoul Culture Week (2023)</h3>
+                    <p>Online cultural event with 500+ participants. Activities included Korean daily discussion, K-Pop
+                        lyric listening, and Korean cooking class.</p>
+                </div>
+
+                <div class="portfolio-box">
+                    <h3>Language Exchange Program (2024)</h3>
+                    <p>Global virtual meetups connecting learners from Indonesia, Philippines, and the US with native
+                        Korean speakers.</p>
+                </div>
+
+                <div class="portfolio-box">
+                    <h3>EPS-TOPIK Preparation Bootcamp (2025)</h3>
+                    <p>Intensive 6-week bootcamp with practice tests, vocabulary training, and mock interviews for
+                        workers preparing to go to Korea.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Our Package" class="course-section">
+            <h2>Our Package</h2>
+
+            <div class="course-container">
+                <div class="course-card1">
+                    <img src="arts.jpg" alt="Arts & Humanities">
+                    <h3>Arts & Humanities</h3>
+                    <p>Belajar seni, budaya, dan sejarah dunia dengan metode interaktif.</p>
+                </div>
+
+                <div class="course-card2">
+                    <img src="health.jpg" alt="Health & Medicine">
+                    <h3>Health & Medicine</h3>
+                    <p>Pemahaman dasar hingga lanjutan tentang kesehatan dan medis.</p>
+                </div>
+
+                <div class="course-card3">
+                    <img src="engineering.jpg" alt="Engineering">
+                    <h3>Engineering</h3>
+                    <p>Kembangkan keterampilan teknik dan rekayasa untuk masa depan.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Message Us" class="message-section">
+            <h2>Message Us</h2>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="button" onclick="validateForm();">Send Message</button>
+            </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 SEOUL CLASS. All rights reserved.</p>
+        </div>
+
+    </footer>
+
 
     <!-- JS EXTERNAL -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
