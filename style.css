@@ -14,7 +14,7 @@ html {
     width: 100px;
     height: 100px;
     background-color: grey;
-    background-image: url(https://i.postimg.cc/ncQ7LFmQ/SEOUL.pnghttps://i.imgur.com/HH6wTJt.png);
+    background-image: url(https://i.postimg.cc/ncQ7LFmQ/SEOUL.png);
     background-size: cover;
     border-radius: 50px;
 }
@@ -28,12 +28,15 @@ html {
     background-color: blue;
     position: sticky;
     top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .nav-list ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
 .my-link {
@@ -83,7 +86,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -91,7 +94,7 @@ html {
     font-size: 20px;
     font-weight: normal;
     margin-top: 20px;
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -101,7 +104,7 @@ html {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; /* biar responsif */
+  flex-wrap: wrap;
   margin: 40px auto;
   max-width: 1200px;
 }
@@ -130,7 +133,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    margin-top: 25px;
+    font-size: 25px;
     font-weight: bold;
     background-image: url(https://i.postimg.cc/NFSczZv2/changbok-ko-F8t2-VGn-I47-I-unsplash.jpg);
 }
@@ -155,15 +159,86 @@ html {
   transform: translateY(-5px);
 }
 
-.package-section {
-    height: 100vh;
-    background-color: lightyellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+.courses .container {
+  max-width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-package {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.course-card {
+  width: 300px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  position: relative;
+  transition: transform 0.3s;
+  background-size: cover;
+  background-position: center;
+}
+
+.course-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.course-card h3,
+.course-card p,
+.course-card .btn-more {
+  position: relative;
+  z-index: 1; /* supaya di atas overlay */
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Tombol More */
+.btn-more {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+  background: white;
+  color: #333;
+}
+
+.beginner {
+  background-image: url("https://i.postimg.cc/HxgWxtWP/Whats-App-Image-2025-09-13-at-06-25-55-26311d0d.jpg");
+}
+
+.intermediate {
+  background-image: url("https://i.postimg.cc/rF3ks9QC/Whats-App-Image-2025-09-13-at-06-25-54-fabbbe14.jpg");
+}
+
+.epstopik {
+  background-image: url("https://i.postimg.cc/sf0FHcdd/Whats-App-Image-2025-09-13-at-06-25-54-43d6fdb8.jpg");
 }
 
 
@@ -171,14 +246,14 @@ html {
 .message-section {
     height: 70vh;
     width: 300px;
-    margin: 40px 0 30px 40px;
-    background-color: grey;
+    margin: 40px auto 30px auto;
+    background-color: blue;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 32px 24px;
     font-size: 20px;
     font-weight: bold;
@@ -189,7 +264,8 @@ html {
     flex-direction: column;
     gap: 12px;
     margin-top: 16px;
-    width: 125%;
+    width: 100%;
+    max-width: 350px;
 }
 
 .footer-content {

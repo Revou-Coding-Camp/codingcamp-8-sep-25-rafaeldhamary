@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Seoul Class</title>
 
     <!-- CSS EXTERNAL -->
     <link rel="stylesheet" href="style.css">
@@ -96,46 +96,55 @@
         </section>
 
         <section id="Our Package" class="course-section">
-            <h2>Our Package</h2>
+            <h2 class="header-package">Our Package</h2>
+            <section class="courses">
+                <div class="container">
 
-            <div class="course-container">
-                <div class="course-card1">
-                    <img src="arts.jpg" alt="Arts & Humanities">
-                    <h3>Arts & Humanities</h3>
-                    <p>Belajar seni, budaya, dan sejarah dunia dengan metode interaktif.</p>
+                    <div class="course-card beginner">
+                        <h3>Beginner Class</h3>
+                        <p>Learn to read and write Hangul, master basic greetings, and build your first Korean
+                            sentences.</p>
+                        <a href="#Message Us" class="btn-more">Enroll Now</a>
+                    </div>
+
+                    <div class="course-card intermediate">
+                        <h3>Intermediate Class</h3>
+                        <p>Expand your vocabulary, improve grammar, and practice real-life dialogues.</p>
+                        <a href="#Message Us" class="btn-more">Enroll Now</a>
+                    </div>
+
+                    <div class="course-card epstopik">
+                        <h3>Eps Topik Prep Pack</h3>
+                        <p>Intensive program with vocabulary drills, practice tests, and reading strategies.</p>
+                        <a href="#Message Us" class="btn-more">Enroll Now</a>
+                    </div>
+
                 </div>
-
-                <div class="course-card2">
-                    <img src="health.jpg" alt="Health & Medicine">
-                    <h3>Health & Medicine</h3>
-                    <p>Pemahaman dasar hingga lanjutan tentang kesehatan dan medis.</p>
-                </div>
-
-                <div class="course-card3">
-                    <img src="engineering.jpg" alt="Engineering">
-                    <h3>Engineering</h3>
-                    <p>Kembangkan keterampilan teknik dan rekayasa untuk masa depan.</p>
-                </div>
-            </div>
-
-        </section>
+            </section>
 
 
-        <section id="Message Us" class="message-section">
-            <h2>Message Us</h2>
+            <section id="Message Us" class="message-section">
+                <h2>Message Us</h2>
 
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-                    <button type="button" onclick="validateForm();">Send Message</button>
-            </form>
+                        <label>
+                        <input type="radio" name="gender" value="male" required> Laki-laki
+                        </label>
+                        <label>
+                        <input type="radio" name="gender" value="female"> Perempuan
+                        </label>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <button type="button" onclick="validateForm();">Send Message</button>
+                </form>
 
     </main>
 
